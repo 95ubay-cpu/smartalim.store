@@ -125,6 +125,10 @@ main{padding:2px 12px 8px;flex:1}
 .alif-entry .ar{font-size:30px;font-family:'Amiri',serif;font-weight:700;color:#fff;margin-bottom:6px}
 .alif-entry .nm{font-size:16px;font-weight:700;color:#fff}
 .alif-entry .info{font-size:12px;color:#EAFBF4;margin-top:4px;opacity:.9}
+.app-dl{display:block;background:var(--white);border:2px solid var(--border);border-radius:var(--radius);padding:14px 20px;text-align:center;cursor:pointer;transition:all .2s;margin-bottom:16px;text-decoration:none}
+.app-dl:active{transform:scale(.97);border-color:var(--green);background:var(--mint-2)}
+.app-dl .nm{font-size:15px;font-weight:800;color:var(--green-deep)}
+.app-dl .info{font-size:11px;color:var(--muted);margin-top:3px}
 
 .alif-tiles{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:8px 6px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-sm);direction:rtl}
 .alif-tile{width:36px;height:38px;border-radius:7px;background:var(--mint-2);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;font-family:'Amiri',serif;font-weight:700;color:var(--ink);cursor:pointer;touch-action:manipulation;transition:all .15s;flex-shrink:0}
@@ -174,7 +178,12 @@ main{padding:2px 12px 8px;flex:1}
       <div class="info">28 ta harf · bosib, talaffuzini eshiting</div>
     </div>
 
-    <input type="search" class="search" id="surahSearch" placeholder="Sura izlang... (mas: Fotiha, Baqarah)" autocomplete="off">
+    <a class="app-dl" href="ilova.html">
+<div class="nm">Ilovani yuklab olish (Android)</div>
+<div class="info">114 sura, oflayn ishlaydi, ovoz bilan — bepul</div>
+</a>
+
+<input type="search" class="search" id="surahSearch" placeholder="Sura izlang... (mas: Fotiha, Baqarah)" autocomplete="off">
     <div class="search-count" id="searchCount"></div>
     <div class="surah-cards" id="surahCards"></div>
   </div>
